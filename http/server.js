@@ -5,7 +5,7 @@ const path = require('path')
 http.createServer((req, res) => {
 
 
-    const file = req.url === '/' ? 'index.html' :req.url
+    const file = req.url === '/' ? 'index.html' : req.url
     const filePath = path.join(__dirname, 'public', file)
     const extname = path.extname(filePath)
 
@@ -26,4 +26,4 @@ http.createServer((req, res) => {
     
 
        
-}).listen(5000, () => console.log('Server is running'))
+}).listen(2000, () => console.log('Server is running'))
